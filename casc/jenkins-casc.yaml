@@ -1,6 +1,22 @@
 jobs:
   - script: >
-      folder('project-a') {
-        displayName('Project A')
-        description('Folder for project A')
+      job("terraform-job") {
+        description()
+        keepDependencies(false)
+        disabled(false)
+        concurrentBuild(false)
+        wrappers {
+           terraformBuildWrapper {
+              variables("")
+              terraformInstallation("terraform")
+              doGetUpdate(true)
+              doNotApply(false)
+              doDestroy(false)
+              config {
+                 value("inline")
+                 inlineConfig("")
+                 fileConfig("")
+              }
+           }
+        }
       }

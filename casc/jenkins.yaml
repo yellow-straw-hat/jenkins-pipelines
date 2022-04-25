@@ -68,7 +68,7 @@ security:
     - "b493e3fad104c5f69512f2b4af571ddc5e5f27c0"
 unclassified:
   casCGlobalConfig:
-    configurationPath: "https://github.com/yellow-straw-hat/jenkins-pipelines/blob/main/casc/create-job.yaml"
+    configurationPath: "https://github.com/yellow-straw-hat/jenkins-pipelines/blob/main/casc/jenkins-casc.yaml"
   buildDiscarders:
     configuredBuildDiscarders:
     - "jobBuildDiscarder"

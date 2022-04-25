@@ -1,2 +1,2 @@
 jobs:
-  - url: https://example.acme.org/job-dsl/testjob.groovy
+  - url: https://github.com/yellow-straw-hat/jenkins-pipelines/blob/main/casc/create-job2.groovy

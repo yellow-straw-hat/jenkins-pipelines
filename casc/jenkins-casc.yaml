@@ -1,2 +1,6 @@
 jobs:
-- url: https://github.com/yellow-straw-hat/jenkins-pipelines/blob/main/casc/create-job2.groovy
+  - script: >
+      folder('project-a') {
+        displayName('Project A')
+        description('Folder for project A')
+      }

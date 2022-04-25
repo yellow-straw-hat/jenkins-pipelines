@@ -1,5 +1,10 @@
 jobs:
   - script: >
-      folder('garliq/gfr') {
-        description('GFR folder')
+      multibranchPipelineJob('configuration-as-code') {
+          branchSources {
+              git {
+                  id = 'configuration-as-code'
+                  remote('https://github.com/yellow-straw-hat/maven-example.git')
+              }
+          }
       }
